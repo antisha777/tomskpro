@@ -193,6 +193,20 @@ function reg_sidebar_telephone() {
        );
 }
 
+function reg_sidebar_about() {
+    register_sidebar(
+      array(
+      		'id' 			=> 'about-text',
+        	'name' 			=> __( 'Текст на главной' ),
+        	'description'	=> __( 'text header.' ),
+        	'before_widget' => '<div id="%1$s" class="about__inner %2$s">',
+        	'after_widget'  => '</div>',
+        	'before_title'  => '<p class="about__lode">',
+        	'after_title'   => '</p>'
+        )
+       );
+}
+
 add_action( 'widgets_init', 'tomskpro_widgets_init' );
 
 add_action( 'widgets_init', 'reg_sidebar_form' );
@@ -200,6 +214,8 @@ add_action( 'widgets_init', 'reg_sidebar_form' );
 add_action( 'widgets_init', 'reg_sidebar_footer' );
 
 add_action( 'widgets_init', 'reg_sidebar_mobile' );
+
+add_action( 'widgets_init', 'reg_sidebar_about' );
 
 add_action( 'widgets_init', 'reg_sidebar_telephone' );
 
@@ -326,3 +342,7 @@ function mytheme_customize_register( $wp_customize ) {
 	add_action( 'customize_register', 'mytheme_customize_register' );
 
 add_filter( 'wp_sitemaps_enabled', '__return_false' );
+
+add_filter( 'excerpt_length', function(){
+	return 7;
+} );
