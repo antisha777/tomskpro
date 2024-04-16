@@ -1,0 +1,187 @@
+.swiper {
+    position: relative;
+    display: block;
+    margin-bottom: 100px;
+    &__title {
+        
+        &_backgraund {
+            background-color: white;
+            padding: 3px 0;
+        }
+
+        &_color {
+            position: absolute;
+            top: 50%;
+            left: 25px;
+            color: #fff;
+            width: max-content;
+            background: linear-gradient(90deg,#e23834 3.26%,#7a27f1 98.07%);
+            padding: 5px 15px;
+        }
+    }
+
+    &__subtitle {
+        background: whitesmoke;
+        padding: 15px;
+        height: 6vh;
+    }
+
+    &__arrow {
+        position: absolute;
+        top: 50%;
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        width: 46px;
+        height: 46px;
+        cursor: pointer;
+        z-index: 9999;
+        background: linear-gradient(45deg,#e43932 3.26%,#7827f6 98.07%);
+
+        &::before {top: 10px;}
+
+        &_right {
+            right: -20px;
+            align-items: flex-start;
+            right: 0;
+        }
+
+        &_left {
+            left: 0;
+            align-items: flex-end;
+        }
+    }
+
+    &__button {
+        height: 45px;
+        width: 45px;
+        position: absolute;
+
+        &::after {
+            content: '';
+            height: 6px;
+            width: 30px;
+            position: absolute;
+            background: linear-gradient(45deg,#e43932 3.26%,#7827f6 98.07%);
+            bottom: 11px;
+            background: white;
+        }
+
+        &::before {
+            content: '';
+            height: 6px;
+            width: 30px;
+            position: absolute;
+            background: linear-gradient(45deg,#e43932 3.26%,#7827f6 98.07%);
+            background: white;
+        }
+
+        &_right {
+            &::after {
+                transform: rotate(-45deg);
+                right: 10px;
+                background: linear-gradient(45deg,#e43932 3.26%,#7827f6 98.07%);
+                background: white;
+            }
+            
+            &::before {
+                background: linear-gradient(45deg,#e43932 3.26%,#7827f6 98.07%);
+                transform: rotate(45deg);
+                right: 10px;
+                top: 10px;
+                background: white;
+            }
+        }
+        
+        &_left {
+            &::after {
+                transform: rotate(45deg);
+                left: 10px;
+                background: white;
+            }
+            
+            &::before {
+                transform: rotate(-45deg);
+                left: 10px;
+                top: 10px;
+                background: white;
+            }
+        }
+    }
+
+    &__content {
+        margin: 0 10px;
+        overflow: hidden;
+        width: 100%;
+    }
+
+    &__img {
+
+        height: 250px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        // width: 500px;
+        & img {
+            position: absolute;
+            width: 100%;
+            object-position: center center;
+            object-fit: cover;
+            z-index: -1;
+            max-height: 100%;
+        }  
+    }
+
+    &__text {
+        padding: 20px 30px;
+        background:  $grey;
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        // width: 100%;
+    }
+
+    &__overlay {
+        background: #32373c;
+        opacity: 0.4;
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+    }
+
+    &__slide {
+        display: flex;
+        gap: 15px;
+    }
+}
+
+.portfolio {
+    position: relative;
+    &::after {
+        content: "Примеры моих работ";
+        position: absolute;
+        top: -33px;
+        left: 10px;
+        text-transform: uppercase;
+        font-weight: 900;
+        font-size: 75px;
+        opacity: 0.06;
+        color: #007eff;
+    }
+    &::before {
+        content: "Примеры моих работ";
+        position: absolute;
+        top: -30px;
+        left: 12px;
+        text-transform: uppercase;
+        font-weight: 900;
+        font-size: 75px;
+        opacity: 0.06;
+        color: #ff00dd;
+    }
+}

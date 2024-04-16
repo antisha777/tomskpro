@@ -28,7 +28,7 @@ a {
   text-decoration: none;
 }
 
-button {
+.btn {
   border: none;
   outline: none;
   cursor: pointer;
@@ -40,9 +40,7 @@ button {
   display: block;
   text-transform: uppercase;
   white-space: nowrap;
-  margin-right: 50px;
 }
-
 .btn_large {
   position: absolute;
   top: 25px;
@@ -75,10 +73,6 @@ h1#fps {
 }
 .container_head-top {
   position: relative;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 740px;
   min-height: 740px;
   padding-bottom: 30px;
 }
@@ -90,6 +84,7 @@ h1#fps {
 .logo {
   max-width: 200px;
   min-height: 50px;
+  z-index: 99;
 }
 
 .header {
@@ -123,13 +118,57 @@ h1#fps {
   background-image: url("./assests/img//whatsapp-svgrepo-com.svg");
   margin-top: 10px;
 }
+.header__navmenu-buttom {
+  z-index: 99;
+}
 .header__navmenu-buttom p {
   display: none;
 }
+@media only screen and (max-width: 1220px) {
+  .header__nav-tel {
+    display: none;
+  }
+}
+.header__btn {
+  z-index: 99;
+}
+@media only screen and (max-width: 1220px) {
+  .header__btn {
+    order: 1;
+  }
+}
+@media only screen and (max-width: 1220px) and (max-width: 620px) {
+  .header__btn {
+    display: none;
+  }
+}
+.header__burger {
+  order: 2;
+  width: 50px;
+  margin: 0;
+}
+@media only screen and (min-width: 1220px) {
+  .header__burger {
+    display: none;
+  }
+}
+
+.video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 740px;
+  background: black;
+}
+.video video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.75;
+}
 
 #about {
-  background: #3ee2ff;
-  background: linear-gradient(90deg, #3ee2ff 3.26%, #1ef8f8 98.07%);
   margin-bottom: 70px;
 }
 
@@ -182,35 +221,129 @@ h1#fps {
   height: 100%;
 }
 
+@media only screen and (max-width: 1220px) {
+  .nav-menu {
+    display: none;
+  }
+}
+
+.mobile__holder {
+  position: fixed;
+  z-index: 9;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  padding: 80px 24px 100px;
+  background-color: #000;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity ease 0.35s;
+  overflow: auto;
+  color: white;
+}
+.mobile__holder-active {
+  opacity: 1;
+  pointer-events: auto;
+}
+.mobile__burger {
+  position: relative;
+  z-index: 99;
+  display: block;
+  width: 35px;
+  height: 28px;
+  font-size: 0;
+  background: 0;
+  border: 0;
+}
+.mobile__burger::after, .mobile__burger::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 4px;
+  background-color: #fff;
+  transition: transform ease 0.3s, box-shadow ease 0.3s;
+}
+.mobile__burger::after {
+  top: 24px;
+  transform: scaleX(0.7);
+  transform-origin: right;
+}
+.mobile__burger::before {
+  top: 12px;
+  box-shadow: 0 -12px 0 #fff;
+}
+.mobile__burger-active::before {
+  box-shadow: 0 0 0 #fff;
+  transform: rotate(-45deg);
+}
+.mobile__burger-active::after {
+  transform: translate(-5px, 0px) rotate(45deg);
+}
+.mobile__navigation ul {
+  flex-direction: column;
+  padding: 20px 0;
+  margin-top: 70px;
+  border-top: 2px solid #fff;
+}
+.mobile__navigation ul a {
+  font-size: 24px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.mobile__navigation ul li {
+  margin: 15px 0;
+}
+.mobile__footer {
+  display: flex;
+  flex-direction: column;
+}
+.mobile__footer a {
+  padding: 20px 60px;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  font-size: 16px;
+}
+.mobile__form {
+  border: 1px solid;
+  border-image: linear-gradient(90deg, #e23834 3.26%, #7a27f1 98.07%) 1;
+}
+.mobile__btn {
+  background: linear-gradient(90deg, #e23834 3.26%, #7a27f1 98.07%);
+}
+.mobile__messenger .header__navmenu-buttom a {
+  font-size: 16px;
+}
+
 .navigation__list {
   list-style: none;
   padding: 0;
   margin: 0;
   display: flex;
 }
-
-.navigation__item:not(:last-child) {
-  margin-right: 28px;
-}
-
 .navigation__item {
   font-size: 18px;
   font-weight: 600;
   transition: 0.15s color;
   cursor: pointer;
 }
-
+.navigation__item:not(:last-child) {
+  margin-right: 28px;
+}
 .navigation__link {
   font-size: 14px;
   font-weight: 600;
   transition: 0.15s color;
   color: rgb(255, 255, 255);
 }
-
 .navigation__list li:not(:last-child) {
   margin-right: 28px;
 }
-
 .navigation__list a {
   font-size: 14px;
   font-weight: 600;
@@ -255,9 +388,78 @@ h1#fps {
   color: #ff00dd;
 }
 
+.hero {
+  margin-bottom: 100px;
+  background-color: #f5f5f4;
+}
+.hero__folder {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+@media only screen and (max-width: 768px) {
+  .hero__folder {
+    flex-direction: column-reverse;
+  }
+}
+.hero__text {
+  max-height: 80%;
+  width: 50%;
+  position: relative;
+  top: 50%;
+  min-height: 500px;
+  padding: 50px;
+}
+@media only screen and (max-width: 768px) {
+  .hero__text {
+    width: 100%;
+  }
+}
+.hero__title {
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 28px;
+  margin-bottom: 50px;
+}
+.hero__subtitle {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 50px;
+}
+.hero__btn {
+  padding: 20px 60px;
+  font-size: 13px;
+  color: currentColor;
+  background: transparent;
+  border: 1px solid;
+  border-image: linear-gradient(90deg, #e23834 3.26%, #7a27f1 98.07%) 1;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 600;
+  cursor: pointer;
+}
+.hero__img {
+  width: 60%;
+  height: 600px;
+}
+@media only screen and (max-width: 768px) {
+  .hero__img {
+    width: 100%;
+  }
+}
+.hero__img img {
+  background: no-repeat;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  text-align: start;
+  object-fit: cover;
+}
+
 .swiper {
   position: relative;
   display: block;
+  margin-bottom: 100px;
 }
 .swiper__title_backgraund {
   background-color: white;
@@ -298,7 +500,7 @@ h1#fps {
   right: 0;
 }
 .swiper__arrow_left {
-  left: -20px;
+  left: 0;
   align-items: flex-end;
 }
 .swiper__button {
@@ -350,6 +552,7 @@ h1#fps {
 .swiper__content {
   margin: 0 10px;
   overflow: hidden;
+  width: 100%;
 }
 .swiper__img {
   height: 250px;
@@ -366,6 +569,15 @@ h1#fps {
   z-index: -1;
   max-height: 100%;
 }
+.swiper__text {
+  padding: 20px 30px;
+  background: #F8F6F7;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
 .swiper__overlay {
   background: #32373c;
   opacity: 0.4;
@@ -378,4 +590,84 @@ h1#fps {
 .swiper__slide {
   display: flex;
   gap: 15px;
+}
+
+.portfolio {
+  position: relative;
+}
+.portfolio::after {
+  content: "Примеры моих работ";
+  position: absolute;
+  top: -33px;
+  left: 10px;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 75px;
+  opacity: 0.06;
+  color: #007eff;
+}
+.portfolio::before {
+  content: "Примеры моих работ";
+  position: absolute;
+  top: -30px;
+  left: 12px;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 75px;
+  opacity: 0.06;
+  color: #ff00dd;
+}
+
+.price {
+  position: relative;
+}
+.price::after {
+  content: "Цены на услуги";
+  position: absolute;
+  top: -33px;
+  left: 10px;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 75px;
+  opacity: 0.06;
+  color: #007eff;
+}
+.price::before {
+  content: "Цены на услуги";
+  position: absolute;
+  top: -30px;
+  left: 12px;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 75px;
+  opacity: 0.06;
+  color: #ff00dd;
+}
+.price__navigation {
+  margin-bottom: 50px;
+}
+.price__navigation .active li {
+  color: white;
+  background: linear-gradient(90deg, #e23834 3.26%, #7a27f1 98.07%);
+}
+.price__navigation a {
+  background: #F8F6F7;
+  border: 0;
+  margin: 0;
+  color: black;
+  text-align: center;
+}
+.price__navigation li {
+  padding: 15px;
+  max-width: 250px;
+  width: 100%;
+  background: #F8F6F7;
+  text-align: center;
+}
+.price__navigation li:not(:last-child) {
+  margin-right: 0;
+}
+.price__navigation__list li.active {
+  color: white;
+  background: linear-gradient(90deg, #e23834 3.26%, #7a27f1 98.07%);
 }

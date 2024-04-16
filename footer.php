@@ -51,17 +51,17 @@
                     <div class="footer-inner__row">
                         <div class="form-box">
                             <form id="#" class="" action="<?php echo get_home_url() ?>/send.php" method="post">
-                            <div class="form-box__item">
-                                <label class="form-box__label">Ваше имя</label>
-                                <input class="form-box__input" type="text" placeholder="Андрей" name="name" required>
-                            </div>
-                            <div class="form-box__item">
-                                <label class="form-box__label">Номер телефона</label>
-                                <input class="form-box__input" type="text" placeholder="+7(___) ___-__-__" name="phone" required>
-                            </div>
-                            <button class="form-box__but form-box__but_border btn">+ Отправить</button>
-                            <p class="form-box__agreement">Нажимая кнопку “Отправить” Вы соглашаетесь на обработку Ваших данных</p>
-                            <input type="hidden" name="act" value="order">
+                                <div class="form-box__item">
+                                    <label class="form-box__label">Ваше имя</label>
+                                    <input class="form-box__input" type="text" placeholder="Андрей" name="name" required>
+                                </div>
+                                <div class="form-box__item">
+                                    <label class="form-box__label">Номер телефона</label>
+                                    <input class="form-box__input" type="text" placeholder="+7(___) ___-__-__" name="phone" required>
+                                </div>
+                                <button class="form-box__but form-box__but_border btn">+ Отправить</button>
+                                <p class="form-box__agreement">Нажимая кнопку “Отправить” Вы соглашаетесь на обработку Ваших данных</p>
+                                <input type="hidden" name="act" value="order">
                             </form>
                         </div>
                     </div>
@@ -90,10 +90,9 @@
             </div>
 </footer>
 <!-------------------------modal form----------------------------> 
-        </main>
 </div>
 
-<div class="blink-2" id="toTop">
+<!-- <div class="blink-2" id="toTop">
     <buttomclass="toTop-buttom">
         <img src="<?php echo get_template_directory_uri() ?>/assests/img/btnl.png" alt="Назад" class="toTop-buttom__image">
     </buttom>
@@ -194,14 +193,14 @@
         
         </div>
     </div>
-</div>
+</div> -->
 
 
 </body>
 <!-- <script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/assests/js/slick.min.js"></script> -->
 <!-- <script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/assests/js/tabs.js"></script> -->
 <!-- <script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/assests/js/whtemobil.js"></script> -->
-<!-- <script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/assests/js/moblmenu.js"></script> -->
+<script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/assests/js/moblmenu1.js"></script>
 <script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/assests/js/cont-form.js"></script>
 <!-- <script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/assests/js/redAbout.js"></script> -->
 <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script> -->

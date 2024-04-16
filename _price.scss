@@ -1,0 +1,60 @@
+.price {
+    position: relative;
+    &::after {
+        content: "Цены на услуги";
+        position: absolute;
+        top: -33px;
+        left: 10px;
+        text-transform: uppercase;
+        font-weight: 900;
+        font-size: 75px;
+        opacity: 0.06;
+        color: #007eff;
+    }
+    &::before {
+        content: "Цены на услуги";
+        position: absolute;
+        top: -30px;
+        left: 12px;
+        text-transform: uppercase;
+        font-weight: 900;
+        font-size: 75px;
+        opacity: 0.06;
+        color: #ff00dd;
+    }
+    &__navigation {
+        margin-bottom: 50px;
+        .active {
+            & li {
+            color: white;
+            background: linear-gradient(90deg, #e23834 3.26%, #7a27f1 98.07%);
+            }            
+        }
+        & a {
+            background: $grey;
+            border: 0;
+            margin: 0;
+            color: black;
+            text-align: center;
+        }
+
+        & li {
+            padding: 15px;
+            max-width: 250px;
+            width: 100%;
+            background: $grey;
+            text-align: center;
+        }
+
+        & li:not(:last-child) {
+            margin-right: 0;
+        }
+
+        &__list {
+            & li.active {
+                color: white;
+                    background: linear-gradient(90deg, #e23834 3.26%, #7a27f1 98.07%);
+            }
+        }
+    }
+}
