@@ -1,5 +1,6 @@
 .price {
     position: relative;
+    
     &::after {
         content: "Цены на услуги";
         position: absolute;
@@ -24,37 +25,53 @@
     }
     &__navigation {
         margin-bottom: 50px;
-        .active {
-            & li {
-            color: white;
-            background: linear-gradient(90deg, #e23834 3.26%, #7a27f1 98.07%);
-            }            
-        }
         & a {
-            background: $grey;
             border: 0;
             margin: 0;
             color: black;
             text-align: center;
         }
-
-        & li {
+        & a {
             padding: 15px;
             max-width: 250px;
             width: 100%;
             background: $grey;
             text-align: center;
         }
-
-        & li:not(:last-child) {
+        & a:not(:last-child) {
             margin-right: 0;
         }
-
         &__list {
-            & li.active {
+            & .active {
                 color: white;
                     background: linear-gradient(90deg, #e23834 3.26%, #7a27f1 98.07%);
             }
         }
     }
+    &__slide {
+        height: 100%;
+        padding: 24px 32px;
+        background: $more-black;
+    }
+    &__item {
+        background-image: url(./assests/img/price-mark.svg);
+        background-size: 15px;
+        background-repeat: no-repeat;
+        padding-left: 20px;
+        margin-bottom: 6px;
+        background-position: 0px 3px;
+    }
+}
+
+.active > a {
+    color: white;
+    background: linear-gradient(90deg, #e23834 3.26%, #7a27f1 98.07%) !important;
+    // color: $white !important;
+    // border: none !important;
+    // padding: 12px 17px !important;
+    // &:hover {
+    //     border: 2px solid #dc2743 !important;
+    //     background: transparent !important;
+    //     color: $more-black !important;
+    // }
 }

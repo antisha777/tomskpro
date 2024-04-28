@@ -3,7 +3,7 @@
         <button class="mobile__burger"></button>
         <div class="mobile__holder">
             <div class="mobile__navigation">
-                <?php include (TEMPLATEPATH . '/template-parts/nav.php'); ?>
+                <?php include (TEMPLATEPATH . '/template-parts/header/nav.php'); ?>
             </div>
             <div class="mobile__footer">
                 <a href="" class="mobile__form">Оставить заявку</a>

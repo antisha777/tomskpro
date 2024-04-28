@@ -25,20 +25,20 @@ get_header();
 
 <section id="about" class="section">
 
-    <?php include (TEMPLATEPATH . '/template-parts/about.php'); ?>
+    <?php include (TEMPLATEPATH . '/template-parts/about/about.php'); ?>
     <!-- end container container_head-top -->
 </section>
 
 <!------ Услуги ----->
 <section id="popular" class="section">
 
-    <?php include (TEMPLATEPATH . '/template-parts/pop.php'); ?>
+    <?php include (TEMPLATEPATH . '/template-parts/pop/pop.php'); ?>
     <!-- end container -->
 </section>
 
 <!------------------ hero -------------------->
 <section id="hero" class="section">
-    <?php include (TEMPLATEPATH . '/template-parts/hero.php'); ?>
+    <?php include (TEMPLATEPATH . '/template-parts/hero/hero.php'); ?>
 </section>
 
 <!------------------ Портфолио -------------------->
@@ -48,7 +48,7 @@ get_header();
 
 <!------------------ Прайс -------------------->
 <section id="Portfolio" class="section">
-    <?php include (TEMPLATEPATH . '/template-parts/price.php'); ?>    
+    <?php include (TEMPLATEPATH . '/template-parts/price/price.php'); ?>    
 </section>
             
 </main>

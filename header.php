@@ -46,7 +46,7 @@
                         <div class="logo"><?php the_custom_logo (); ?></div>
 
                         <div class="nav-menu">
-                            <?php include (TEMPLATEPATH . '/template-parts/nav.php'); ?>
+                            <?php include (TEMPLATEPATH . '/template-parts/header/nav.php'); ?>
                         </div>
 
                         <button data-fancybox data-src="#form-glow"  class="btn header__btn">
@@ -63,7 +63,7 @@
                         </div>
                         
                         <div class="header__burger">
-                            <?php include (TEMPLATEPATH . '/template-parts/burger.php'); ?>
+                            <?php include (TEMPLATEPATH . '/template-parts/header/burger.php'); ?>
                         </div>
 
                     </div> 

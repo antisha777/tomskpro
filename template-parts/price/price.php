@@ -25,9 +25,9 @@
                 ) ); ?>
 
                 <div class="tabs__content"> 
-                    <!-- Ремонт компьютеров -->
+                    <!-- Разработка сайтов -->
                     <div class="tabs__item">
-                        <?php include (TEMPLATEPATH . '/template-parts/dev.php'); ?>
+                        <?php include (TEMPLATEPATH . '/template-parts/price/dev.php'); ?>
                     </div>
                     <!-- Ремонт ноутбуков -->
                     <div class="tabs__item">
