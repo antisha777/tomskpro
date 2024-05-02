@@ -197,22 +197,5 @@
 
 
 </body>
-<!-- <script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/assests/js/slick.min.js"></script> -->
-<!-- <script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/assests/js/tabs.js"></script> -->
-<!-- <script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/assests/js/whtemobil.js"></script> -->
-<script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/assests/js/moblmenu1.js"></script>
-<script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/assests/js/cont-form.js"></script>
-<!-- <script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/assests/js/redAbout.js"></script> -->
-<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script> -->
-<script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/assests/js/anime.js"></script>
-<script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/assests/js/calc.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
-<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"> -->
-
-<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-<script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/assests/js/slide.js"></script>
-<!-- <script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/assests/js/run-num.js"></script> -->
-<!-- <script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/assests/js/button.js"></script> -->
-
-
+    <?php include (TEMPLATEPATH . '/template-parts/footer/link.php'); ?>
 </html>

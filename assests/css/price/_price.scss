@@ -30,15 +30,13 @@
             margin: 0;
             color: black;
             text-align: center;
-        }
-        & a {
-            padding: 15px;
+            padding: 20px 60px;
             max-width: 250px;
             width: 100%;
             background: $grey;
-            text-align: center;
+            cursor: pointer;
         }
-        & a:not(:last-child) {
+        & li:not(:last-child) {
             margin-right: 0;
         }
         &__list {
@@ -62,7 +60,10 @@
         background-position: 0px 3px;
     }
 }
-
+.tabs__item {
+    display: none;
+    &.active{display: contents;}
+}
 .active > a {
     color: white;
     background: linear-gradient(90deg, #e23834 3.26%, #7a27f1 98.07%) !important;

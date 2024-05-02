@@ -651,20 +651,14 @@ h1#fps {
   margin: 0;
   color: black;
   text-align: center;
-}
-.price__navigation li {
-  padding: 15px;
+  padding: 20px 60px;
   max-width: 250px;
   width: 100%;
   background: #F8F6F7;
-  text-align: center;
+  cursor: pointer;
 }
 .price__navigation li:not(:last-child) {
   margin-right: 0;
-}
-.price__navigation_active li {
-  color: white;
-  background: linear-gradient(90deg, #e23834 3.26%, #7a27f1 98.07%);
 }
 .price__navigation__list .active {
   color: white;
@@ -684,7 +678,14 @@ h1#fps {
   background-position: 0px 3px;
 }
 
-.active {
+.tabs__item {
+  display: none;
+}
+.tabs__item.active {
+  display: contents;
+}
+
+.active > a {
   color: white;
   background: linear-gradient(90deg, #e23834 3.26%, #7a27f1 98.07%) !important;
 }

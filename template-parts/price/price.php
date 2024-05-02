@@ -1,80 +1,16 @@
 <div class="container">
     <div class="price block">
         <div class="block__about"><h2>Прайс</h2></div>
-
-        <div class="price__inner">
             <div id="myTabs" class="tabs">
-
-                <?php wp_nav_menu( array (
-                    'theme_location'  => 'menu-2',
-                    'menu'            => '',
-                    'container'       => 'div',
-                    'container_class' => 'navigation  price__navigation',
-                    'menu_class'      => 'navigation__list',
-                    'menu_id'         => '',
-                    'echo'            => true,
-                    'fallback_cb'     => 'wp_page_menu',
-                    'before'          => '',
-                    'after'           => '',
-                    'link_before'     => '',
-                    'link_after'      => '',
-                    'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
-                    'depth'           => 0,
-                    'walker'          => '',
-
-                ) ); ?>
-
+                <?php include (TEMPLATEPATH . '/template-parts/price/menu.php'); ?>
                 <div class="tabs__content"> 
                     <!-- Разработка сайтов -->
                     <div class="tabs__item">
                         <?php include (TEMPLATEPATH . '/template-parts/price/dev.php'); ?>
                     </div>
-                    <!-- Ремонт ноутбуков -->
+                    <!-- Поддержка -->
                     <div class="tabs__item">
-                        <div class="block-left">
-                            <div class="block block_background">
-                                <h3 class="block__title">Диагностика ноутбука</h3>
-                                <p class="block__money">0 &#x20bd;</p>
-                                <p class="block__subtitle">Без разбора</p>
-                            </div>
-                            <div class="block">
-                                <h3 class="block__title">Диагностика ноутбука</h3>
-                                <p class="block__money">от 800 &#x20bd;</p>
-                                <p class="block__subtitle">С полной разборкой</p>
-                            </div>
-                            <div class="block block_background">
-                                <h3 class="block__title">Чистка от пыли</h3>
-                                <p class="block__money">от 1300 &#x20bd;</p>
-                                <p class="block__subtitle">С разбором</p>
-                            </div>
-                            <div class="block">
-                                <h3 class="block__title">Установка жесткого диска</h3>
-                                <p class="block__money">200 &#x20bd;</p>
-                                <p class="block__subtitle">Без полного рабора</p>
-                            </div>
-                        </div>
-                        <div class="block-right">
-                            <div class="block block_background">
-                                <h3 class="block__title">Установка модулей памяти</h3>
-                                <p class="block__money">300 &#x20bd;</p>
-                                <p class="block__subtitle">Без полного рабора</p>
-                            </div>
-                            <div class="block">
-                                <h3 class="block__title">Замена матрицы</h3>
-                                <p class="block__money">от 800 &#x20bd;</p>
-                                <p class="block__subtitle">Без стоимости матрицы</p>
-                            </div>
-                            <div class="block block_background">
-                                <h3 class="block__title">Замена клавиаутуры</h3>
-                                <p class="block__money">от 500 &#x20bd;</p>
-                                <p class="block__subtitle">Без стоимости клавиатуры</p>
-                            </div>
-                            <div class="block">
-                                <h3 class="block__title">Замена разъемов</h3>
-                                <p class="block__money">от 1200 &#x20bd;</p>
-                                <p class="block__subtitle">Цены от 1500</p>
-                            </div>
-                        </div>
+                        <?php include (TEMPLATEPATH . '/template-parts/price/support.php'); ?>
                     </div>
                     <!-- Ремонт телевизоров -->
                     <div class="tabs__item">
@@ -228,3 +164,48 @@
     </div>
     <!-- end price block -->
 </div>
+
+<!-- <div class="container">
+    <div class="price">
+        <div class="container__title container__title_black">Мои цены</div>
+
+        <div id="myTabs" class="tabs">
+
+            <?php include (TEMPLATEPATH . '/template-parts/price/menu.php'); ?>
+
+            <div class="tabs__content"> 
+                <!-- Ботокс для волос -->
+                <div class="tabs__item">
+                    <?php include (TEMPLATEPATH . '/template-parts/price/botox.php'); ?>
+                </div>
+                <!-- Кератиновое выпрямление -->
+                <div class="tabs__item">
+                    <?php include (TEMPLATEPATH . '/template-parts/price/keratin.php'); ?>
+                </div>
+                <!-- Кератиновое выпрямление -->
+                <div class="tabs__item">
+                    <?php include (TEMPLATEPATH . '/template-parts/price/botox.php'); ?>
+                </div> 
+                <!-- Кератиновое выпрямление -->
+                <div class="tabs__item">
+                    <?php include (TEMPLATEPATH . '/template-parts/price/keratin.php'); ?>
+                </div> 
+                <!-- Кератиновое выпрямление -->
+                <div class="tabs__item">
+                    <?php include (TEMPLATEPATH . '/template-parts/price/botox.php'); ?>
+                </div>
+                <!-- Кератиновое выпрямление -->
+                <div class="tabs__item">
+                    <?php include (TEMPLATEPATH . '/template-parts/price/keratin.php'); ?>
+                </div> 
+                <!-- Кератиновое выпрямление -->
+                <div class="tabs__item">
+                    <?php include (TEMPLATEPATH . '/template-parts/price/botox.php'); ?>
+                </div>                        
+            </div> 
+            <!-- end tabs__content -->
+        </div>
+        <!-- end tabs -->
+    </div>
+    <!-- end price -->
+</div -->
