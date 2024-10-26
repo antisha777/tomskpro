@@ -45,7 +45,7 @@ let swiper1 = new Swiper('.swiper1', {
   
     },
   
-    slidesPerView: 1,
+    slidesPerView: 4,
   
     // breakpoints: {
       
@@ -56,3 +56,14 @@ let swiper1 = new Swiper('.swiper1', {
     // }
   
   });
+
+  let swiper3 = new Swiper('.swiper3', {
+    navigation: {
+        nextEl: '.swiper__arrow_right',
+        prevEl: '.swiper__arrow_left',
+    
+      },
+    
+      slidesPerView: 4,
+    
+    });

@@ -524,6 +524,56 @@ h1#fps {
   color: #ff00dd;
 }
 
+.box {
+  background-color: #0a0a0a;
+}
+
+.footer {
+  background: #F8F6F7;
+  padding: 50px 0 15px 0;
+}
+.footer__row {
+  display: flex;
+  justify-content: space-between;
+}
+.footer__row:not(:last-child) {
+  margin-bottom: 50px;
+}
+.footer__info {
+  font-size: 12px;
+}
+.footer__title-social, .footer__title-dev {
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.footer__item {
+  display: flex;
+  flex-direction: column;
+}
+.footer__police, .footer__copy {
+  font-size: 14px;
+}
+.footer__subtitle {
+  padding-bottom: 5px;
+}
+
+.social {
+  list-style: none;
+  padding: 0;
+}
+.social_horizon {
+  display: flex;
+  justify-content: center;
+}
+.social_horizon li:not(:last-child) {
+  margin-right: 20px;
+}
+.social img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
 .portfolio {
   position: relative;
 }
@@ -688,4 +738,156 @@ h1#fps {
 .active > a {
   color: white;
   background: linear-gradient(90deg, #e23834 3.26%, #7a27f1 98.07%) !important;
+}
+
+.form__navigation {
+  margin-bottom: 50px;
+}
+.form__navigation a {
+  border: 0;
+  margin: 0;
+  color: black;
+  text-align: center;
+  padding: 20px 60px;
+  max-width: 250px;
+  width: 100%;
+  background: #F8F6F7;
+  cursor: pointer;
+}
+.form__navigation li:not(:last-child) {
+  margin-right: 0;
+}
+.form__navigation__list .active {
+  color: white;
+  background: linear-gradient(90deg, #e23834 3.26%, #7a27f1 98.07%);
+}
+.form__img {
+  width: 100%;
+  height: 600px;
+  position: relative;
+}
+.form__img img {
+  background: no-repeat;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  text-align: start;
+  object-fit: cover;
+  opacity: 0.5;
+}
+.form__content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.form__text {
+  /* width: 35%; */
+  width: 400px;
+  padding: 50px;
+  background-color: black;
+  color: #fff;
+}
+
+.faq {
+  position: relative;
+  margin-bottom: 70px;
+}
+.faq::after {
+  content: "Вопросы и ответы";
+  position: absolute;
+  top: -33px;
+  left: 10px;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 75px;
+  opacity: 0.06;
+  color: #007eff;
+}
+.faq::before {
+  content: "Вопросы и ответы";
+  position: absolute;
+  top: -30px;
+  left: 12px;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 75px;
+  opacity: 0.06;
+  color: #ff00dd;
+}
+.faq__navigation {
+  margin-bottom: 50px;
+}
+.faq__navigation a {
+  border: 0;
+  margin: 0;
+  color: black;
+  text-align: center;
+  padding: 20px 60px;
+  max-width: 250px;
+  width: 100%;
+  background: #F8F6F7;
+  cursor: pointer;
+}
+.faq__navigation li:not(:last-child) {
+  margin-right: 0;
+}
+.faq__navigation__list .active {
+  color: white;
+  background: linear-gradient(90deg, #e23834 3.26%, #7a27f1 98.07%);
+}
+.faq__item label {
+  padding: 25px 0;
+  position: relative;
+  z-index: 20;
+  display: block;
+  cursor: pointer;
+  font-size: 20px;
+  border-bottom: 1px solid #D9D9D9;
+}
+.faq__item input {
+  display: none;
+}
+.faq__item input:checked + label > span, .faq__item input:checked + label:hover > span {
+  border-bottom: none;
+  background: linear-gradient(90deg, #E23834 3.26%, #7A27F1 98.07%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.faq__item label:hover:after, .faq__item input:checked + label:hover:after {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  right: 13px;
+  top: 15px;
+  background: transparent url("./assests/img/icon-arrow.svg") no-repeat center center;
+  transition: transform ease 0.35s;
+}
+.faq__item input:checked + label:hover:after {
+  background-image: url("./assests/img/icon-arrow.svg");
+  transform: rotate(90deg);
+}
+.faq__item article {
+  overflow: hidden;
+  height: 0px;
+  position: relative;
+  z-index: 10;
+  -webkit-transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
+  -moz-transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
+  -o-transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
+  -ms-transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
+  transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
+}
+.faq__item article {
+  line-height: 23px;
+  font-size: 16px;
+}
+.faq__item input:checked ~ article {
+  height: 300px;
+}
+.faq__content {
+  padding: 20px;
+  background: #F5F5F4;
 }

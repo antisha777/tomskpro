@@ -1,6 +1,5 @@
 .price {
     position: relative;
-    
     &::after {
         content: "Цены на услуги";
         position: absolute;
@@ -60,9 +59,11 @@
         background-position: 0px 3px;
     }
 }
-.tabs__item {
-    display: none;
-    &.active{display: contents;}
+.tabs {
+    &__item {
+        display: none;
+        &.active{display: contents;}
+    }
 }
 .active > a {
     color: white;

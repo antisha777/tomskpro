@@ -51,6 +51,7 @@ function tomskpro_setup() {
 		array(
 			'menu-1' => esc_html__( 'Primary', 'tomskpro' ),
 			'menu-2' => esc_html__( 'Price', 'tomskpro' ),
+			'menu-3' => esc_html__( 'Faq', 'tomskpro' ),
 		)
 	);
 

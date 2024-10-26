@@ -24,14 +24,12 @@ get_header();
 </div>
 
 <section id="about" class="section">
-
     <?php include (TEMPLATEPATH . '/template-parts/about/about.php'); ?>
     <!-- end container container_head-top -->
 </section>
 
 <!------ Услуги ----->
 <section id="popular" class="section">
-
     <?php include (TEMPLATEPATH . '/template-parts/pop/pop.php'); ?>
     <!-- end container -->
 </section>
@@ -42,14 +40,23 @@ get_header();
 </section>
 
 <!------------------ Портфолио -------------------->
-<section id="Portfolio" class="section">
+<section id="portfolio" class="section">
     <?php include (TEMPLATEPATH . '/template-parts/portfolio.php'); ?>    
 </section>
 
 <!------------------ Прайс -------------------->
-<section id="Portfolio" class="section">
+<section id="price" class="section">
     <?php include (TEMPLATEPATH . '/template-parts/price/price.php'); ?>    
 </section>
+
+<!------------------ Форма -------------------->
+<section id="form" class="section">
+    <?php include (TEMPLATEPATH . '/template-parts/form/form.php'); ?>    
+</section>
+<!------------------ FAQ -------------------->
+<section id="faq" class="section">
+    <?php include (TEMPLATEPATH . '/template-parts/faq/faq.php'); ?>    
+</section> 
             
 </main>
 
