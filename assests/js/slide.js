@@ -36,7 +36,7 @@ let swiper1 = new Swiper('.swiper1', {
   
       }
     }
-  });
+});
   
   let swiper2 = new Swiper('.swiper2', {
   navigation: {
@@ -47,15 +47,7 @@ let swiper1 = new Swiper('.swiper1', {
   
     slidesPerView: 4,
   
-    // breakpoints: {
-      
-    //   1200: {
-    //     slidesPerView: 1,
-  
-    //   }
-    // }
-  
-  });
+});
 
   let swiper3 = new Swiper('.swiper3', {
     navigation: {
@@ -64,6 +56,17 @@ let swiper1 = new Swiper('.swiper1', {
     
       },
     
-      slidesPerView: 4,
+      slidesPerView: 2,
     
-    });
+});
+
+  let swiper4 = new Swiper('.swiper4', {
+    navigation: {
+        nextEl: '.swiper__arrow_right4',
+        prevEl: '.swiper__arrow_left4',
+    
+      },
+    
+      slidesPerView: 1,
+    
+});

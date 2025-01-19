@@ -311,9 +311,6 @@ h1#fps {
 .about {
   position: relative;
 }
-.about__title {
-  padding-top: 200px;
-}
 .about__title-size {
   display: inline-grid;
   margin-bottom: 50px;
@@ -355,6 +352,12 @@ h1#fps {
   background: no-repeat;
   width: 100%;
   height: 100%;
+}
+
+.about-hero {
+  display: flex;
+  padding-top: 200px;
+  justify-content: space-between;
 }
 
 @media only screen and (max-width: 1220px) {
@@ -666,6 +669,63 @@ h1#fps {
   overflow: hidden;
   text-align: start;
   object-fit: cover;
+}
+.hero__item {
+  max-width: 550px;
+  width: 100%;
+}
+
+.hero__content-text > p:first-child {
+  color: #fff;
+  width: max-content;
+  background: linear-gradient(90deg, #e23834 3.26%, #7a27f1 98.07%);
+  padding: 5px 15px;
+}
+
+.hero__content-text span {
+  text-transform: uppercase;
+  background-image: linear-gradient(90deg, #e03838 3.26%, #7b27ef 98.07%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding: 10px;
+  font-size: 36px;
+}
+
+.hero__content-text2 {
+  background-color: white;
+}
+
+.botton-slider__arrow {
+  height: 25px;
+  width: 25px;
+  position: absolute;
+  top: -57px;
+  /* transform: translateY(-50%); */
+  border-radius: 5px;
+  z-index: 100;
+  border: 1px solid #fff;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+.botton-slider__arrow::before {
+  content: "";
+  height: 2px;
+  width: 14px;
+  background-color: #fff;
+  position: absolute;
+}
+.botton-slider__arrow::after {
+  content: "";
+  height: 2px;
+  width: 14px;
+  background-color: #fff;
+  position: absolute;
+}
+.botton-slider__arrow_left {
+  right: 32px;
+}
+.botton-slider__arrow_right {
+  right: 0;
 }
 
 .price {
