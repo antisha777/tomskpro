@@ -1,2 +1,0 @@
-BY DMITRY DOLENCHUK
-Antisha
