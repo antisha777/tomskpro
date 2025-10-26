@@ -1,0 +1,23 @@
+{
+  "name": "tomskpro",
+  "version": "1.0.0",
+  "description": "Сайт портфолио TomskPro",
+  "main": "index.js",
+  "scripts": {
+    "dev": "gulp",
+    "build": "gulp build"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^5.1.0",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-uglify": "^3.0.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-plumber": "^1.2.1",
+    "browser-sync": "^2.27.11",
+    "sass": "^1.58.0"
+  },
+  "author": "TomskPro",
+  "license": "MIT"
+}

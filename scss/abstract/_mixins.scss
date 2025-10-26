@@ -1,0 +1,31 @@
+@import 'variables';
+
+// Миксины для медиа-запросов
+@mixin _1220 {
+  @media (max-width: 1220px) {
+    @content;
+  }
+}
+
+@mixin _1220m {
+  @media (min-width: 1221px) {  // Просто указываем 1221px напрямую
+    @content;
+  }
+}
+
+@mixin _620 {
+  @media (max-width: 620px) {
+    @content;
+  }
+}
+
+// Миксин для кнопки
+@mixin button-reset {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: none;
+  position: relative;
+  overflow: hidden;
+  font-family: "Montserrat", Arial, sans-serif;
+}

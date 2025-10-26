@@ -7,6 +7,93 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <header class="header">
+        <div class="container">
+            <div class="header__top">
+                <div class="header__menu">
+                    <!-- Логотип -->
+                    <div class="logo">
+                        <a href="/" class="custom-logo-link" rel="home" aria-current="page">
+                            <img width="192" height="50" src="img/logos/logo.png" class="custom-logo" alt="Логотип TomskPro" decoding="async">
+                        </a>
+                    </div>
+                    <!-- Основная навигация -->
+                    <div class="nav-menu">
+                        <div itemscope itemtype="http://schema.org/SiteNavigationElement" class="header__navmenu">
+                            <div class="php-code-nav">
+                                <div class="navigation header__nav header__nav_none">
+                                    <ul id="menu-menu-1" class="navigation__list">
+                                        <li class="menu-item"><a href="#main">Главная</a></li>
+                                        <li class="menu-item"><a href="#services">Услуги</a></li>
+                                        <li class="menu-item"><a href="#portfolio">Примеры</a></li>
+                                        <li class="menu-item"><a href="#prices">Цены</a></li>
+                                        <li class="menu-item"><a href="#faq">FAQ</a></li>
+                                        <li class="menu-item"><a href="#contacts">Контакты</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Кнопка обратного звонка -->
+                    <button data-fancybox data-src="#form-glow" class="btn header__btn button_gradient">
+                        <div class="btn__large">
+                            <div class="rectangle-runner-button__text blink-2">Перезвонить мне</div>
+                            <div class="go-up-button rectangle-runner-button__icon right">
+                                <div class="go-up-button__runner is-white"></div>
+                            </div>
+                        </div>
+                    </button>
+
+                    <!-- Контакты телефона -->
+                    <div class="header__nav-tel">
+                        <div class="header__navmenu-buttom">
+                            <a href="tel:+79539233109" class="header__navmenu-namber header__navmenu-namber_tel">8 953 923 31 09</a>
+                        </div>
+                        <div class="header__navmenu-buttom">
+                            <a href="https://wa.me/+79539233109" class="header__navmenu-namber header__navmenu-namber_wtp">Написать WhatsApp</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Бургер меню для мобильных -->
+                    <div class="header__burger">
+                        <div class="mobile">
+                            <nav class="mobile__nav">
+                                <button class="mobile__burger"></button>
+                                <div class="mobile__holder">
+                                    <div class="mobile__navigation">
+                                        <div class="header__navmenu">
+                                            <div class="navigation header__nav header__nav_none">
+                                                <ul class="navigation__list">
+                                                    <li class="menu-item"><a href="#main">Главная</a></li>
+                                                    <li class="menu-item"><a href="#services">Услуги</a></li>
+                                                    <li class="menu-item"><a href="#portfolio">Примеры</a></li>
+                                                    <li class="menu-item"><a href="#prices">Цены</a></li>
+                                                    <li class="menu-item"><a href="#faq">FAQ</a></li>
+                                                    <li class="menu-item"><a href="#contacts">Контакты</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mobile__footer">
+                                        <a href="#form" class="mobile__form">Оставить заявку</a>
+                                        <a href="#callback" class="mobile__btn">Перезвонить</a>
+                                        <div class="mobile__messenger">
+                                            <a href="tel:+79539233109" class="header__navmenu-namber header__navmenu-namber_tel">8 953 923 31 09</a>
+                                            <a href="https://wa.me/+79539233109" class="header__navmenu-namber header__navmenu-namber_wtp">Написать WhatsApp</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                </div> 
+                <!-- end header__menu -->
+            </div>
+            <!-- end header__top -->
+        </div>
+        <!-- end container -->
+    </header>
     <!-- Сюда будем вставлять твой хедер и блоки -->
     
     <script src="js/main.js"></script>

@@ -1,0 +1,74 @@
+@import '../abstract/variables';
+@import '../abstract/mixins';
+
+.header {
+  background-color: rgba($black, 0.8);
+  position: fixed;
+  width: 100%;
+  z-index: $z-header;
+  backdrop-filter: blur(10px);
+
+  &__menu {
+    display: flex;
+    align-items: center;
+    padding: $header-padding;
+    justify-content: space-between;
+  }
+
+  &__navmenu-namber {
+    display: flex;
+    align-items: center;
+    height: 20px;
+    padding-left: 30px;
+    color: $white;
+    font-weight: $font-weight-semi;
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: contain;
+
+    &_tel {
+      background-image: url('../img/icons/icon-phone.svg');
+    }
+    
+    &_wtp {
+      background-image: url('../img/icons/whatsapp-svgrepo-com.svg');
+      margin-top: 10px;
+    }
+  }
+
+  &__navmenu-buttom {
+    z-index: 99;
+    
+    & p {
+      display: none;
+    }
+  }
+
+  &__nav-tel {
+    @include _1220 {
+      display: none;
+    }
+  }
+
+  &__btn {
+    z-index: 99;
+    
+    @include _1220 {
+      order: 1;
+
+      @include _620 {
+        display: none;
+      }
+    }
+  }
+
+  &__burger {
+    order: 2;
+    width: 50px;
+    margin: 0;
+    
+    @include _1220m {
+      display: none;
+    }
+  }
+}

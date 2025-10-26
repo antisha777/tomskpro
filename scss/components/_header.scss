@@ -1,0 +1,10 @@
+.navigation__list {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+  
+  @include _1220 {
+    flex-direction: column;
+    gap: 20px;
+  }
+}

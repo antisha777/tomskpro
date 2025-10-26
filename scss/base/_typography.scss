@@ -1,0 +1,12 @@
+@import '../abstract/variables';
+
+// Базовые стили типографики
+h1, h2, h3, h4, h5, h6 {
+  font-weight: $font-weight-bold;
+  line-height: 1.2;
+  margin-bottom: 0.5em;
+}
+
+p {
+  margin-bottom: 1em;
+}

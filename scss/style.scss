@@ -1,19 +1,29 @@
-// Abstract
+// Сначала абстракты (переменные и миксины)
 @import 'abstract/variables';
 @import 'abstract/mixins';
 
-// Base
+// Потом базовые стили
 @import 'base/reset';
 @import 'base/typography';
 
-// Components
+// Затем компоненты
 @import 'components/buttons';
 @import 'components/header';
 
-// Layout
+// И layout
 @import 'layout/header';
-@import 'layout/footer';
 @import 'layout/sections';
 
-// Pages
-@import 'pages/home';
+// Контейнер
+.container {
+  max-width: $container-width;
+  margin: auto;
+  padding: 0 15px;
+  overflow: hidden;
+}
+
+// Основной контент
+main {
+  padding-top: 150px;
+  text-align: center;
+}
